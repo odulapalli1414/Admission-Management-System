@@ -81,39 +81,13 @@ A Java-based desktop application designed to streamline the management of studen
        amount FLOAT
    );
 
-MySQL Database
-Install MySQL and create a database named StudentFeeManagement.
-Run the following SQL script to create the required tables:
-sql
-Copy code
-CREATE TABLE student (
-    rollno VARCHAR(10) PRIMARY KEY,
-    name VARCHAR(50),
-    fname VARCHAR(50),
-    dob DATE,
-    address VARCHAR(255),
-    phone VARCHAR(15),
-    email VARCHAR(50),
-    class_x FLOAT,
-    class_xii FLOAT,
-    aadhar VARCHAR(12),
-    course VARCHAR(50),
-    branch VARCHAR(50)
-);
+## Configuration
 
-CREATE TABLE fee (
-    course VARCHAR(50),
-    semester1 FLOAT,
-    semester2 FLOAT,
-    semester3 FLOAT,
-    semester4 FLOAT,
-    semester5 FLOAT,
-    semester6 FLOAT,
-    semester7 FLOAT,
-    semester8 FLOAT
-);
+### Clone this repository:
+```bash
+git clone https://github.com/your-username/admission-and-fee-management.git
+cd admission-and-fee-management
 
-CREATE TABLE collegefee (
     rollno VARCHAR(10),
     course VARCHAR(50),
     branch VARCHAR(50),
