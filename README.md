@@ -71,12 +71,55 @@ A Java-based desktop application designed to streamline the management of studen
    );
 
    CREATE TABLE login (
-       username VARCHAR(20) PRIMARY KEY,
-       password VARCHAR(20)
+    username VARCHAR(25), 
+    password VARCHAR(25)
    );
 
-   CREATE TABLE fee (
-       rollno VARCHAR(20),
-       course VARCHAR(20),
-       amount FLOAT
+   CREATE TABLE student (
+    name VARCHAR(40), 
+    fname VARCHAR(40), 
+    rollno VARCHAR(20), 
+    dob VARCHAR(40), 
+    address VARCHAR(100), 
+    phone VARCHAR(20), 
+    email VARCHAR(40), 
+    class_x VARCHAR(20), 
+    class_xii VARCHAR(20), 
+    aadhar VARCHAR(20), 
+    course VARCHAR(40), 
+    branch VARCHAR(40)
    );
+
+
+
+   INSERT INTO login VALUES ('admin', '12345');
+
+   CREATE TABLE fee (
+    course VARCHAR(20), 
+    semester1 VARCHAR(20), 
+    semester2 VARCHAR(20), 
+    semester3 VARCHAR(20), 
+    semester4 VARCHAR(20), 
+    semester5 VARCHAR(20), 
+    semester6 VARCHAR(20), 
+    semester7 VARCHAR(20), 
+    semester8 VARCHAR(20)
+   );
+   INSERT INTO fee VALUES ('BTech', 48000, 43000, 43000, 43000, 43000, 43000, 43000, 43000);
+   INSERT INTO fee VALUES ('BSc', 40000, 35000, 35000, 35000, 35000, 35000, NULL, NULL);
+   INSERT INTO fee VALUES ('BCA', 35000, 34000, 34000, 34000, 34000, 34000, NULL, NULL);
+   INSERT INTO fee VALUES ('MTech', 65000, 60000, 60000, 60000, NULL, NULL, NULL, NULL);
+   INSERT INTO fee VALUES ('MSc', 47500, 45000, 45000, 45000, NULL, NULL, NULL, NULL);
+   INSERT INTO fee VALUES ('MCA', 43000, 42000, 42000, 49000, NULL, NULL, NULL, NULL);
+   INSERT INTO fee VALUES ('BCom', 22000, 20000, 20000, 20000, 20000, 20000, NULL, NULL);
+   INSERT INTO fee VALUES ('MCom', 36000, 30000, 30000, 30000, NULL, NULL, NULL, NULL);
+
+   CREATE TABLE collegefee (
+    rollno VARCHAR(20), 
+    course VARCHAR(20), 
+    branch VARCHAR(20), 
+    semester VARCHAR(20), 
+    total VARCHAR(20)
+   );
+
+
