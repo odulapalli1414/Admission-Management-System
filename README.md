@@ -1,6 +1,6 @@
 # Admission & Student Fee Management System
 
-A Java-based desktop application designed to streamline the management of student admissions and fees for educational institutions. This system includes features for student record management, fee management, and utility tools. Built with **Swing** for the graphical interface, it uses **PostgreSQL** and **MySQL** for backend data management, offering a flexible and scalable solution.
+A Java-based desktop application designed to streamline the management of student admissions and fees for educational institutions. This system includes features for student record management, fee management, and utility tools. Built with **Swing** for the graphical interface, it uses **PostgreSQL** for backend data management, offering a flexible and scalable solution.
 
 ---
 
@@ -35,7 +35,6 @@ A Java-based desktop application designed to streamline the management of studen
 - **Frontend:** Java Swing for GUI design.
 - **Backend:**
   - PostgreSQL database for admission management.
-  - MySQL database for fee management.
 - **Libraries:**
   - `JDateChooser` for date selection.
   - `DbUtils` for database result visualization.
@@ -46,7 +45,7 @@ A Java-based desktop application designed to streamline the management of studen
 
 ### Prerequisites
 - **Java Development Kit (JDK)** (version 8 or later) installed on your system.
-- **PostgreSQL** and **MySQL** databases installed and configured.
+- **PostgreSQL** databases installed and configured.
 - IDE or text editor for running Java applications (e.g., IntelliJ IDEA, Eclipse, or VS Code).
 
 ### Database Configuration
