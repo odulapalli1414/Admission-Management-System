@@ -121,4 +121,12 @@ A Java-based desktop application designed to streamline the management of studen
     total VARCHAR(20)
    );
 
+## Contributing
+
+Contributions are welcome! Please feel free to:
+
+- Open an issue for any bugs or feature requests.
+- Submit a pull request for any improvements or new features you'd like to add.
+
+We appreciate your contributions!
 
