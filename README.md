@@ -88,9 +88,36 @@ A Java-based desktop application designed to streamline the management of studen
 git clone https://github.com/your-username/admission-and-fee-management.git
 cd admission-and-fee-management
 
-    rollno VARCHAR(10),
-    course VARCHAR(50),
-    branch VARCHAR(50),
-    semester VARCHAR(50),
-    total FLOAT
-);
+## Update Database Connection Credentials in `Conn.java`
+
+Update the database connection details in the `Conn.java` file as shown below:
+
+```java
+public class Conn {
+    Connection c;
+    Statement s;
+
+    public Conn() {
+        try {
+            // PostgreSQL Configuration
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection(
+                "jdbc:postgresql://localhost:5432/AdmissionManagementSystem",
+                "your-postgresql-username",
+                "your-postgresql-password"
+            );
+
+            // MySQL Configuration
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            c = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/StudentFeeManagement",
+                "your-mysql-username",
+                "your-mysql-password"
+            );
+
+            s = c.createStatement();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
